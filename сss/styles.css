@@ -6,6 +6,7 @@
   --diff-text-color: #434455;
   --our-team-background: #f4f4fd;
   --footer-text: #e7e9fc;
+  --border-color: #8e8f99;
 }
 
 body {
@@ -451,6 +452,7 @@ body {
   height: 112px;
   width: 264px;
   background-color: var(--our-team-background);
+  border: none;
   border-radius: 4px;
 }
 
@@ -486,44 +488,56 @@ body {
   background-color: var(--accent-color);
 }
 
-/* .soc-links {
+.companies-section {
+  padding-top: 130px;
+}
+
+.companies-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+  margin: 0;
+  margin-bottom: 72px;
+  text-transform: capitalize;
+
+  color: var(--common-color);
+}
+
+.companies-list {
+  padding: 0;
   display: flex;
   flex-direction: row;
+  gap: 24px;
+}
+
+.companies-list-item {
+  width: 168px;
+  height: 88px;
+}
+
+.companies-link {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  gap: 24px;
-  margin-top: 8px;
-  margin-bottom: 32px;
+  border: 1px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
 }
 
-.instagram,
-.twitter,
-.facebook,
-.linkedin {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: var(--logo-n-button-color);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 16px 16px;
-  border-radius: 50%;
+.companies-icon {
+  fill: currentColor;
 }
 
-.instagram {
-  background-image: url(../images/instagram.svg);
+.companies-link:hover,
+.companies-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
-.twitter {
-  background-image: url(../images/twitter.svg);
+.companies-icon:hover,
+.companies-icon:focus {
+  fill: var(--accent-color);
 }
-
-.facebook {
-  background-image: url(../images/facebook.svg);
-}
-
-.linkedin {
-  background-image: url(../images/linkedin.svg);
-} */
